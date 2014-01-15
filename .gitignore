@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+/atestat_01/bin
+
+/atestat_01/obj
