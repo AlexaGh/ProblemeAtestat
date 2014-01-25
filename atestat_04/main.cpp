@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-int v[20],s[20],n;
+int s[20],n;
 void afisare_b(int v[], int n)
 {
     int x, ok, ok1;
@@ -28,7 +28,7 @@ void afisare_b(int v[], int n)
 
 int main()
 {
-    int i;
+    int v[20],i;
     ifstream f("atestat.in");
     f>>n;
     for(i=0; i<n; i++)
