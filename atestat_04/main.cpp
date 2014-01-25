@@ -2,7 +2,7 @@
 #include <fstream>
 using namespace std;
 int v[20],s[20],n;
-void afisare_b(int v2[], int n)
+void afisare_b(int v[], int n)
 {
     int x, ok, ok1;
     ok1=0; //pp "NU EXISTA"
@@ -14,7 +14,7 @@ void afisare_b(int v2[], int n)
         {
             if(x%2==1)
                 ok=0;
-            x=x/10;
+            break;     // x=x/10;
         }
         if(ok==1)
         {
@@ -28,7 +28,7 @@ void afisare_b(int v2[], int n)
 
 int main()
 {
-    int i,v2[20];
+    int i;
     ifstream f("atestat.in");
     f>>n;
     for(i=0; i<n; i++)
@@ -40,7 +40,7 @@ int main()
             cout<<v[i]<<" ";
     cout<<endl;
     //afisez b
-    afisare_b(v2,n);
+    afisare_b(v,n);
     cout<<endl;
     //c
     int a;
