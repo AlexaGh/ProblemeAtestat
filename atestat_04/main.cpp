@@ -13,9 +13,13 @@ void afisare_b(int v[], int n)
         while(x)
         {
             if(x%2==1)
+            {
                 ok=0;
-            break;     // x=x/10;
+                break;
+            }
+            x=x/10;
         }
+
         if(ok==1)
         {
             cout<<v[i]<<" ";
