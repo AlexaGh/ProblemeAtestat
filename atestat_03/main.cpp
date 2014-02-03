@@ -14,6 +14,7 @@ int main()
         if(A[i]%2==0)
             cout<<A[i]<<" ";
     cout<<endl;
+    //b
     maxNr=minNr=A[0];
     for(i=1;i<n;i++)
     {
@@ -26,7 +27,6 @@ int main()
         cout<<minNr<<"\n"<<maxNr<<" ";
 
     //c
-    //stai 2 sec
     int rest;
     while(minNr%maxNr)
     {
@@ -35,7 +35,7 @@ int main()
         maxNr=rest;
     }
     ofstream g("atestat.out");
-    g<<rest; // pentru ce ai calculat rest?
+    g<<rest;
     g.close();
     return 0;
 }
