@@ -11,7 +11,7 @@ int main()
         f>>v[i];
     f.close();
     //a)
-    for(i=n; i>=0; i--)
+    for(i=n-1; i>=0; i--)
         cout<<v[i]<<" ";
     cout<<endl;
     //b)
