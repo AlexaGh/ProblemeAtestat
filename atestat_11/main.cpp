@@ -35,7 +35,7 @@ int main()
         for(j=0; j<=i-1; j++)
 
             p=p*v[i][j];
-        cout<<p%10;
+    cout<<p%10;
     //c
     for (i=0; i<n; i++)
     {

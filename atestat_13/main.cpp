@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int v[20][20],n,i,j,w[20];
+    int v[20][20],n,i,j;
     ifstream f("atestat.in");
     ofstream g("atestat.out");
     f>>n;
@@ -25,13 +25,15 @@ int main()
     cin>>k;
     ok=0;
     for(i=0; i<n; i++)
-        for(j=0;j<n;j++)
-    {
-        if(v[i][j]==k)
+        for(j=0; j<n; j++)
         {
-            ok=1;
+            if(v[i][j]==k)
+            {
+                ok=1;
+                // if we found it, no use searching for it further, right?
+                break;
+            }
         }
-    }
     if(ok==1)
         cout<<"DA";
     else

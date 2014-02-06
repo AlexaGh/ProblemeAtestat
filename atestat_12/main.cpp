@@ -2,14 +2,15 @@
 #include <fstream>
 using namespace std;
 void minim(int v[20][20], int n,int w[20])
-{   int i,j;
+{
+    int i,j;
     int minim;
-    for(i=0;i<n;i++)
+    for(i=0; i<n; i++)
     {
         minim=v[i][0];
-        for(j=0;j<n;j++)
-        if(minim>v[i][j])
-        minim=v[i][j];
+        for(j=0; j<n; j++)
+            if(minim>v[i][j])
+                minim=v[i][j];
         w[i]=minim;
     }
 
@@ -31,15 +32,15 @@ int main()
             cout<<v[i][j]<<" ";
         cout<<endl;
     }
-  //b
+    //b
     int s=0;
-    for(i=0;i<n;i++)
+    for(i=0; i<n; i++)
         s=s+v[i][n-i-1];
-        cout<<s;
+    cout<<s;
 
     minim(v,n,w);
-    for(i=0;i<n;i++)
-    g<<w[i]<<" ";
+    for(i=0; i<n; i++)
+        g<<w[i]<<" ";
     cout<<endl;
 
     return 0;
