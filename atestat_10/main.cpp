@@ -14,7 +14,7 @@ int main()
     for(int i=0; i<n; i++)
         for(int j=0; j<m; j++)
             f>>v[i][j];
-            f>>c;
+    f>>c;
     f.close();
     //a)
     for(int i=0; i<n; i++)
@@ -24,7 +24,7 @@ int main()
         cout<<endl;
     }
     //b
-    nul(v,m,n,k);
+    nul(v,n,m,k);
     //c
     for(int i=0; i<n; i++)
     {
@@ -37,7 +37,7 @@ int main()
         cout<<"nu";
     return 0;
 }
-void nul(int v[20][20], int m, int n, int k)
+void nul(int v[20][20], int n, int m, int k)
 {
     cin>>k;
     int contor, ok=0;
@@ -50,11 +50,10 @@ void nul(int v[20][20], int m, int n, int k)
             if(v[i][j]==0)
                 contor++;
         }
-        if(contor ==k)
+        if(contor == k)
         {
             ok=0;
-            for(int j=0; j<m; j++)
-                cout<<i<<" ";
+            cout<<i+1<<" ";
         }
         if(ok==1)
             cout<<"Nu exista";
