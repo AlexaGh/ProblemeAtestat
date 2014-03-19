@@ -4,13 +4,10 @@
 using namespace std;
 ifstream f("atestat.in");
 ofstream g("atestat.out");
-
-int main()
+int i;
+char a[100];
+void afisare_a()
 {
-    int i;
-    char a[100];
-    f.get(a,101);
-    //a
     for(i=0; i<strlen(a); i++)
     {
         if(a[i]>=97 && a[i]<=122)
@@ -18,6 +15,13 @@ int main()
     }
     cout<<a;
     cout<<endl;
+
+}
+int main()
+{
+    f.get(a,101);
+    //a
+    afisare_a();
     //b
     int nr=0;
     for(i=0; i<strlen(a); i++)
