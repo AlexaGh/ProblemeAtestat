@@ -24,7 +24,7 @@ int main()
         cout<<endl;
     }
     //b
-    nul(v,n,m,k);
+    nul(v,m,n,k);
     //c
     for(int i=0; i<n; i++)
     {
@@ -54,7 +54,7 @@ void nul(int v[20][20], int m, int n, int k)
         {
             ok=0;
             for(int j=0; j<m; j++)
-                cout<<v[i][j]<<" ";
+                cout<<i<<" ";
         }
         if(ok==1)
             cout<<"Nu exista";

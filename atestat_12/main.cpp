@@ -6,6 +6,7 @@ void minim(int v[20][20], int n,int w[20])
     int i,j;
     int minim;
     for(i=0; i<n; i++)
+
     {
         minim=v[i][0];
         for(j=0; j<n; j++)
