@@ -33,12 +33,12 @@ void afisare_c()
     char k;
     cout<<"k=";
     cin>>k;
-    for(i=0; i<strlen(a)-1; i++)
-    {
-        if(a[0]='m')
+    if(a[0]=='m')
         {
             a[0]=k;
         }
+    for(i=0; i<strlen(a)-1; i++)
+    {
         if(a[i]==32 && a[i+1]=='m' )
             a[i+1]=k;
     }
