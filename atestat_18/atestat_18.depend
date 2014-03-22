@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1395509726 source:c:\users\alexa\documents\documents\info\atestat_18\main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+
