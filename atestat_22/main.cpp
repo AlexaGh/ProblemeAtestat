@@ -7,7 +7,6 @@ struct fractie
     int numitor;
     int numarator;
 };
-
 ifstream f("atestat.in");
 
 void citire(fractie &fr)
