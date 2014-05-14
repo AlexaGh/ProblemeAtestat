@@ -23,8 +23,8 @@ void afisare_b()
     cout<<"v= ";
     cin>>v;
     for(int i=0; i<n; i++)
-        gr=gr+a[v][i];
-    cout<<gr;
+        gr=gr+a[v-1][i];
+    cout<<gr<<endl  ;
  }
  void afisare_c()
  {
@@ -35,18 +35,18 @@ void afisare_b()
     for(int i=0; i<n; i++)
     {
         for(int j=0; j<n; j++)
-            cout<<a[i][j];
+            cout<<a[i][j] <<" ";
         cout<<endl;
     }
  }
 int main()
 {
     int x,y,i,j;
-    f>>n>>m;
-    for(int i=0; i<m; i++)
+    f>>n;
+    for(int i=0; i<n; i++)
     {
         f>>x>>y;
-        a[x][y]=a[y][x]=1;
+        a[x-1][y-1]=a[y-1][x-1]=1;
     }
     f.close();
     afisare_a();
