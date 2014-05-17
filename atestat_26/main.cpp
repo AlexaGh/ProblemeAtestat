@@ -65,7 +65,7 @@ int main()
 {
     int x,y,i,j;
     f>>n;
-    for(int i=0; i<n; i++)
+    while(!f.eof())
     {
         f>>x>>y;
         a[x-1][y-1]=1;

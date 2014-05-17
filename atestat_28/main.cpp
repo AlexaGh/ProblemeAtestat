@@ -27,8 +27,8 @@ void afisare_b()
         for(int j=0; j<n; j++)
             grade[i]=grade[i]+a[i][j];
     }
-    int grad_maxim= grade[1];
-    for(int i=2; i<n; i++)
+    int grad_maxim= grade[0];
+    for(int i=1; i<n; i++)
         if(grad_maxim<grade[i])
             grad_maxim=grade[i];
     for(int i=0; i<n; i++)
@@ -45,21 +45,14 @@ void afisare_c()
         a[i][v-1]=0;
     for(int j=0; j<n; j++)
         a[v-1][j]=0;
-
-
-    for(int i=0; i<n; i++)
-    {
-        for(int j=0; j<n; j++)
-            cout<<a[i][j] <<" ";
-        cout<<endl;
-    }
+        afisare_a();
 }
 
 int main()
 {
     int x,y,i,j;
     f>>n;
-    for(int i=0; i<n; i++)
+    while(!f.eof())
     {
         f>>x>>y;
         a[x-1][y-1]=a[y-1][x-1]=1;

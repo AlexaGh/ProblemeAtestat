@@ -18,27 +18,46 @@ void afisare_a()
     }
 }
 void afisare_b()
- {
-    int v, gr=0;
+{
+    int v, nr=0;
     cout<<"v= ";
     cin>>v;
     for(int i=0; i<n; i++)
-        gr=gr+a[v-1][i];
-    cout<<gr<<endl  ;
- }
- void afisare_c()
- {
-     for(int i=0; i<n; i++)
+    {
+        v=0;
         for(int j=0; j<n; j++)
-            if(i!=j)
-                a[i][j]=1;
+            v=v+a[i][j];
+        if(v==0)
+        {
+
+            cout<<i+1<<" ";
+            cout<<endl;
+        }
+
+    }
+}
+void afisare_c()
+{
+    int v;
+    cout<<"v= ";
+    cin>>v;
+    for(int i=0; i<n; i++)
+
+        if(v!=i)
+            a[i][v-1]=1;
+    for(int j=0; j<n; j++)
+
+        if(v!=j)
+            a[v-1][j]=1;
+
     for(int i=0; i<n; i++)
     {
         for(int j=0; j<n; j++)
             cout<<a[i][j] <<" ";
         cout<<endl;
     }
- }
+}
+
 int main()
 {
     int x,y,i,j;
